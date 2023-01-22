@@ -1,0 +1,52 @@
+// Ctrl + / or Shift + Alt + A for commenting on line
+import './App.css'
+
+// Basic Type
+let name: string;
+let age: number | string;
+let isStudent: boolean;
+let hobbies: string[];
+let role: [number, string];
+
+// Function
+// void returns undefined, never returns nothing
+let printName: (name: string) => never; // can have types
+
+// Object Type
+// type Person = {
+//   name: string;
+//   age?: number;
+// };
+
+// let person: Person = {
+//   name: "Zuck",
+// };
+
+// Array of Object
+// let lotsOfPeople: Person[];
+
+// // Unknown
+// let personName: unknown; // Better than 'any'
+
+// Interface | type and interface are different.
+interface Person {
+  name: string;
+  age?: number;
+};
+
+interface Guy extends Person{
+  profession: string;
+}
+
+// Classes
+
+
+function App() {
+  return (
+    <div className="App">
+      Hello world
+    </div>
+  )
+}
+
+export default App
